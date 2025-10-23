@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>عرض تطبيقات الذكاء الاصطناعي</title>
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="AboutUs.html">من نحن</a>
+        <a href="Apps.html">التطبيقات</a>
+        <a href="AddApp.html">إضافة تطبيق</a>
+    </nav>
+
+    <div>
+        <h1>تطبيقات الذكاء الاصطناعي</h1>
+
+        <table id="appsTable">
+            <thead>
+                <tr>
+                    <th>اسم التطبيق</th>
+                    <th>اسم الشركة المطورة</th>
+                    <th>مجال الاستخدام</th>
+                    <th>مجاني</th>
+                    <th>إظهار التفاصيل</th>
+                </tr>
+            </thead>
+            <tbody id="appsTableBody">
+                <tr>
+                    <td>Microsoft Copilot</td>
+                    <td>Microsoft</td>
+                    <td>الإنتاجية والعمل</td>
+                    <td><input type="checkbox" checked disabled></td>
+                    <td><input type="checkbox" class="toggle-details" id="toggle1"></td>
+                </tr>
+                <tr class="app-details">
+                    <td colspan="5">
+                        <p><strong>شرح مختصر: </strong>مساعد شخصي لزيادة الإنتاجية.</p>
+                        <p><strong>عنوان الموقع:</strong> <a
+                                href="https://play.google.com/store/apps/details?id=com.microsoft.copilot"
+                                target="_blank">OpenAI.com</a>
+                        </p>
+                        <img src="img/img1.png" alt="Microsoft Logo" width="100">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Adobe firefly</td>
+                    <td>Adobe</td>
+                    <td>التصميم والابداع</td>
+                    <td><input type="checkbox" checked disabled></td>
+                    <td><input type="checkbox" class="toggle-details" id="toggle1"></td>
+                </tr>
+                <tr class="app-details">
+                    <td colspan="5">
+                        <p><strong>شرح مختصر: </strong>لإنشاء صور ووصفها بالكلمات، وتعديل الصور بطرق مبتكرة
+                            الجودة.</p>
+                        <p><strong>عنوان الموقع:</strong> <a
+                                href="https://play.google.com/store/apps/details?id=com.microsoft.copilot"
+                                target="_blank">Adobe.com</a></p>
+                        <img src="img/img2.png" alt="Adobe Logo" width="100">
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Chatgbt</td>
+                    <td>Microsoft</td>
+                    <td>متعدد المجالات</td>
+                    <td><input type="checkbox" checked disabled></td>
+                    <td><input type="checkbox" class="toggle-details" id="toggle1"></td>
+                </tr>
+                <tr class="app-details">
+                    <td colspan="5">
+                        <p><strong>شرح مختصر: </strong>عبارة عن روبوت مُحادثة مبني على الذكاء الاصطناعي للتفاعل مع
+                            المُستخدمين في مُحادثات شبيهة بمُحادثات البشر.</p>
+                        <p><strong>عنوان الموقع:</strong> <a
+                                href="https://play.google.com/store/apps/details?id=com.openai.chatgpt"
+                                target="_blank">OpenAI.com</a>
+                        </p>
+                        <img src="img/img3.png" alt="Microsoft Logo" width="100">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Otter.ai</td>
+                    <td>Otter.ai</td>
+                    <td>مساعد اجتماعات</td>
+                    <td><input type="checkbox" checked disabled></td>
+                    <td><input type="checkbox" class="toggle-details" id="toggle1"></td>
+                </tr>
+                <tr class="app-details">
+                    <td colspan="5">
+                        <p><strong>شرح مختصر: </strong>تطبيق يلتقط الصوت في الوقت الفعلي ويحوّله إلى تنسيق نصي دقيق
+                            وقابل
+                            للبحث.</p>
+                        <p><strong>عنوان الموقع:</strong> <a
+                                href="https://play.google.com/store/apps/details?id=com.aisense.otter"
+                                target="_blank">Otter.ai.com</a>
+                        </p>
+                        <img src="img/img4.png" alt="Otter.ai Logo" width="100">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Ada health</td>
+                    <td>Ada Health GmbH</td>
+                    <td>صحي</td>
+                    <td><input type="checkbox" checked disabled></td>
+                    <td><input type="checkbox" class="toggle-details" id="toggle1"></td>
+                </tr>
+                <tr class="app-details">
+                    <td colspan="5">
+                        <p><strong>شرح مختصر: </strong>يساعدك في إدخال الأعراض ويوفر تقييماً أوليا للحالة الصحية
+                            المحتملة
+                            وما يجيب عليك فعله </p>
+                        <p><strong>عنوان الموقع:</strong> <a
+                                href=" https://play.google.com/store/apps/details?id=com.ada.app" target="_blank">Ada
+                                Health GmbH.com</a>
+                        </p>
+                        <img src="img/img5.png" alt="Ada Health GmbH Logo" width="100">
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <script src="Myfunction.js"></script>
+</body>
+
+</html>

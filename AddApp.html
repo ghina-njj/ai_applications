@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>إدخال معلومات تطبيق جديد</title>
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="AboutUs.html">من نحن</a>
+        <a href="Apps.html">التطبيقات</a>
+        <a href="Addapp.html">إضافة تطبيق</a>
+    </nav>
+
+    <div
+        style="width: 50%; margin: 20px auto; padding: 20px; background-color: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <h2>إدخال معلومات تطبيق جديد</h2>
+
+        <form id="addAppForm">
+
+            <label for="appName">اسم التطبيق:</label>
+            <input type="text" id="appName" name="appName" required>
+            <p class="error-message" id="appNameError">خطأ: يجب أن يكون أحرفاً هجائية إنكليزية فقط.</p>
+
+            <label for="appMaker">الشركة المصنعة:</label>
+            <input type="text" id="appMaker" name="appMaker" required>
+            <p class="error-message" id="appMakerError">خطأ: يجب أن يتكون من أحرف هجائية وأرقام إنكليزية فقط.</p>
+
+            <label for="appURL">الموقع الإلكتروني (URL):</label>
+            <input type="url" id="appURL" name="appURL" required>
+            <p class="error-message" id="appURLError">خطأ: يجب أن يكون رابط موقع صحيح.</p>
+
+            <div style="margin-bottom: 15px;">
+                <input type="checkbox" id="appFree" name="appFree" style="width: auto;">
+                <label for="appFree" style="display: inline-block;">هل التطبيق مجاني؟</label>
+            </div>
+
+            <label for="appField">مجال الاستخدام:</label>
+            <select id="appField" name="appField" required>
+                <option value="">-- اختر مجالاً --</option>
+                <option value="Robotics">Robotics</option>
+                <option value="Education">Education</option>
+                <option value="E-Commerce">E-Commerce</option>
+                <option value="Healthcare">Healthcare</option>
+            </select>
+            <p class="error-message" id="appFieldError">خطأ: يجب اختيار مجال استخدام.</p>
+
+            <label for="appSummary">شرح مختصر عن التطبيق:</label>
+            <textarea id="appSummary" name="appSummary" rows="4"></textarea>
+
+            <div style="text-align: center; margin-top: 20px;">
+                <button type="submit" id="submitBtn">إرسال</button>
+                <button type="reset" id="resetBtn">إعادة</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <script src="Myfunction.js"></script>
+</body>
+
+</html>
